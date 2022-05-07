@@ -1,0 +1,33 @@
+{
+  "name": "layout-designer-tools-project",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/skoch13/layout-designer-tools-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/skoch13/layout-designer-tools-project-lvl3/actions)",
+  "main": "index.js",
+  "devDependencies": {
+    "bootstrap": "^5.1.3",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-pug": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "stylelint": "^14.8.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0",
+    "surge": "^0.23.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skoch13/layout-designer-tools-project-lvl3.git"
+  },
+  "author": "sk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skoch13/layout-designer-tools-project-lvl3/issues"
+  },
+  "homepage": "https://github.com/skoch13/layout-designer-tools-project-lvl3#readme"
+}
