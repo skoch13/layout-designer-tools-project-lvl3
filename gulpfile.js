@@ -30,6 +30,14 @@ const buildPug = () => {
     .pipe(browserSync.stream());
 }
 
+const copyImages = () => {
+  console.log('Copying images');
+
+  return src('app/images/**/*.*').pipe(dest('build/images'))
+}
+
+const build = parallel(buildSass, buildPug, copyImages);
+
 exports.server = browserSyncJob;
-exports.build = parallel(buildSass, buildPug);
-exports.dev = series(parallel(buildSass, buildPug), browserSyncJob);
+exports.build = build;
+exports.dev = series(build, browserSyncJob);
