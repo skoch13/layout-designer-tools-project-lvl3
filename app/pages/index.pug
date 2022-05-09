@@ -4,10 +4,10 @@ html(lang='ru')
   body
     div.container.vh-100.overflow-hidden
       div.row
-        div.col-4.bg-primary
+        div.col-6.bg-primary.align-items-center
           include sections/header
       div.row
         div.col-4.pt-5.px-4
-          aside левый сайдбар
+          include sections/left
         div.col-8
-          aside правый сайдбар
+          include sections/right
