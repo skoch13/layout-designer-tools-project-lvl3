@@ -1,13 +1,12 @@
-$primary: #4545A5;
-$gray: #EFEFEF;
-$secondary: #6C757D;
-$success: #28A745;
-$info: #17A2B8;
-$warning: #FFC107;
-$danger: #DC3545;
-$light: #FBFBFB;
-$dark: #343A40;
-
+$primary: #4545a5;
+$gray: #efefef;
+$secondary: #6c757d;
+$success: #28a745;
+$info: #17a2b8;
+$warning: #ffc107;
+$danger: #dc3545;
+$light: #fbfbfb;
+$dark: #343a40;
 $grid-breakpoints: (
   xs: 0,
   sm: 576px,
@@ -16,7 +15,6 @@ $grid-breakpoints: (
   xl: 1200px,
   xxl: 1600px
 );
-
 $container-max-widths: (
   sm: 540px,
   md: 720px,

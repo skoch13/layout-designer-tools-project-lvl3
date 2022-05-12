@@ -2,6 +2,7 @@ const { src, dest, parallel, series, watch } = require('gulp');
 const sass = require('gulp-sass')(require('sass'));
 const pug = require('gulp-pug');
 const browserSync = require('browser-sync').create();
+const svgSprite = require('gulp-svg-sprite');
 
 const browserSyncJob = () => {
   browserSync.init({
@@ -33,10 +34,24 @@ const buildPug = () => {
 const copyImages = () => {
   console.log('Copying images');
 
-  return src('app/images/**/*.*').pipe(dest('build/images'))
+  return src('app/images/*.jpg').pipe(dest('build/images'))
 }
 
-const build = parallel(buildSass, buildPug, copyImages);
+const prepareSvg = () => {
+  console.log('Preparing SVGs');
+
+  const config = {
+    mode: {
+      symbol: {
+        sprite: 'sprite.svg'
+      }
+    }
+  }
+
+  return src('app/images/icons/*.svg').pipe(svgSprite(config)).pipe(dest('build/images'))
+}
+
+const build = parallel(buildSass, buildPug, copyImages, prepareSvg);
 
 exports.server = browserSyncJob;
 exports.build = build;
