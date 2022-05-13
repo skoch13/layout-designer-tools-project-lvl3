@@ -41,4 +41,4 @@ include components/contact
 each people, letter in contacts
   h6.text-muted.mt-5= letter
   each person in people
-  +contact(person.name, person.status, person.avatar)
+    +contact(person.name, person.status, person.avatar)

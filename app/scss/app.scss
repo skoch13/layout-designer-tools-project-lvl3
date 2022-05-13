@@ -55,8 +55,23 @@ p:empty {
 
 .chat {
   @include hide-scrollbar;
+
   & .contact:last-of-type {
     margin-bottom: 8rem !important;
   }
 }
 
+@include media-breakpoint-down(sm) {
+  .navbar {
+    border-radius: 0;
+  }
+  .container {
+    overflow: auto !important;
+  }
+
+  .chat {
+    & .contact:last-of-type {
+      margin-bottom: 2rem !important;
+    }
+  }
+}
