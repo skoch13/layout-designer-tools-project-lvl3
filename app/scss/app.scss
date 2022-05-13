@@ -1,3 +1,5 @@
+@import 'mixins/hide-scrollbar.scss';
+
 body {
   background: $gray;
 }
@@ -24,3 +26,37 @@ body {
   height: 200px;
   border-radius: 100px;
 }
+
+.avatar-sm {
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+}
+
+.contact {
+  &:hover {
+    cursor: pointer;
+    background: $primary;
+    color: $light;
+  }
+
+  &:hover .status {
+    color: $gray;
+  }
+}
+
+.status {
+  color: $secondary;
+}
+
+p:empty {
+  display: none;
+}
+
+.chat {
+  @include hide-scrollbar;
+  & .contact:last-of-type {
+    margin-bottom: 8rem !important;
+  }
+}
+
