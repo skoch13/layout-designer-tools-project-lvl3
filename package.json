@@ -25,7 +25,8 @@
   "scripts": {
     "dev": "gulp dev",
     "build": "gulp build",
-    "lintcss": "npx stylelint --fix ./app/scss/**/*.scss"
+    "lintcss": "npx stylelint --fix ./app/scss/**/*.scss",
+    "deploy": "surge --domain noisy-bedroom.surge.sh build/"
   },
   "repository": {
     "type": "git",
