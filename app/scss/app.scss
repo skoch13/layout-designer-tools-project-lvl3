@@ -53,6 +53,10 @@ p:empty {
   display: none;
 }
 
+.message {
+  max-width: 70%;
+}
+
 .chat {
   @include hide-scrollbar;
 

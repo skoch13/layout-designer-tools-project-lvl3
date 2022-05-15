@@ -1,0 +1,26 @@
+include ../components/message
+
+-
+  const messages = [{
+    name: "Вениамин Редакторович",
+    message: "o_O",
+    timestamp: "11:45",
+    avatar: "/images/avatar_4.jpg"
+  }, {
+    name: "Джедай Падаванов",
+    message: "Привет, скоро третий проект? Уже скоро надо будет выложить",
+    timestamp: "10:12",
+    avatar: "/images/avatar_2.jpg"
+  }, {
+    name: "Алексей Примадонин",
+    message: "Тесты упали >_<",
+    timestamp: "08:53",
+    avatar: "/images/avatar_3.jpg"
+  }]
+
+
+h1.fw-bold Чаты
+div
+  input.form-control-plaintext.border-0.border-bottom.p-3.fw-light.mb-5(type='text', placeholder='Поиск по сообщениям')
+  each mes in messages
+    +message(mes.name, mes.message, mes.timestamp, mes.avatar)

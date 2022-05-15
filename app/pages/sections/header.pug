@@ -1,12 +1,12 @@
-nav.navbar.bg-primary.navbar-light.p-3.header.flex-shrink-0
+nav.navbar.nav-pills.bg-primary.navbar-light.p-3(role='tablist', id='myTab')
   a.navbar-brand.flex-grow-1.align-content-center.d-inline-flex.flex-column(href='#')
     svg.logo
       use(href='images/symbol/sprite.svg#logo')
-  a.nav-item.nav-link.text-light.d-inline-flex(href='#')
+  a.nav-item.nav-link.text-light.d-inline-flex(href='#contacts' data-bs-toggle='pill' data-bs-target='#contacts' role='tab')
     svg.icon
       use(href='images/symbol/sprite.svg#people')
     span.small.ms-2.align-self-center.d-none.d-sm-block Контакты
-  a.nav-item.nav-link.text-light.d-inline-flex(href='#')
+  a.nav-item.nav-link.text-light.d-inline-flex(href='#chats' data-bs-toggle='pill' data-bs-target='#chats' role='tab')
     svg.icon
       use(href='images/symbol/sprite.svg#chat')
     span.small.ms-2.align-self-center.d-none.d-sm-block Сообщения
