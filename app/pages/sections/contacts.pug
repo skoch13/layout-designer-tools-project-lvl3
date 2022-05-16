@@ -1,5 +1,7 @@
+include ../components/searchbar
+
 h1.fw-bold Контакты
 div
-  input.form-control-plaintext.border-0.border-bottom.p-3.fw-light(type='text', placeholder='Поиск по контактам')
+  +searchbar('Поиск по контактам')
   div
     include ../../pages/chat
