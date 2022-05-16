@@ -69,10 +69,13 @@ p:empty {
 
 @include media-breakpoint-down(sm) {
   .container {
-    border-radius: 0;
+    border-radius: 0 !important;
     border: 0;
   }
   .navbar {
     order: 2;
+  }
+  .list-group i {
+    display: none;
   }
 }
