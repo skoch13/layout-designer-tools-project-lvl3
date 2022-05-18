@@ -20,6 +20,11 @@
   height: 200px;
 }
 
+.cursor {
+  min-width: 20px;
+  height: 20px;
+}
+
 .avatar-sm {
   width: 50px;
   height: 50px;
@@ -30,7 +35,7 @@
   height: 90px;
 }
 
-.card-component {
+.card-component .contact {
   &:hover {
     cursor: pointer;
     background: $primary;

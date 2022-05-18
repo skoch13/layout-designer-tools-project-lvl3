@@ -1,0 +1,10 @@
+include header-chat
+#current-chat.d-flex.flex-column.align-items-center.justify-content-center.h-100
+  +header-chat
+  main.overflow-auto.h-100.p-4
+    include current-chat
+  div.p-0.p-md-2.mx-5.border-top.d-inline-flex.align-content-between.w-90.align-items-center
+    input.form-control-plaintext.fw-normal(type='text', placeholder='Напишите сообщение...')
+    div.avatar-sm.fw-bold.text-light.radius-50.bg-primary.d-inline-flex.align-items-center.py-3
+      svg.cursor.d-block.text-center.m-0
+        use(href='images/symbol/sprite.svg#cursor')

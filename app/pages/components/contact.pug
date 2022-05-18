@@ -1,9 +1,9 @@
 include avatar
 mixin contact(name, status, avatar)
   a.text-decoration-none.text-black(href='#')
-    div.mt-3.mb-3.d-flex.card-component.justify-content-start.gap-2.shadow-sm.text-decoration-none
+    div.mt-3.mb-3.d-flex.card-component.contact.justify-content-start.gap-2.shadow-sm.text-decoration-none
       div.align-self-center.ms-2
         +avatar(avatar)
       div.my-4.lh-1.align-self-end
         p.h6.fw-bold= name
-        div.status.pb-0.fw-light.small= status
+        div.status.pb-0.fw-normal.small= status
