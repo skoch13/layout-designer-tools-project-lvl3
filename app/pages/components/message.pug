@@ -1,10 +1,11 @@
 include avatar
 mixin message(name, message, timestamp, avatar)
-  div.mt-2.mb-2.d-flex.gap-2.shadow-sm.justify-content-start.card-component
-    div.align-self-center.ms-2
-      +avatar(avatar)
-    div.my-4.align-self-center.message
-      p.h6.fw-bold= name
-      div.status.pb-0.fw-light.small.text-truncate= message
-    div.my-4.ms-auto.me-4.align-self-start
-      div.status.small.fw-light= timestamp
+  a.text-decoration-none.text-black(href='#')
+    div.mt-2.mb-2.d-flex.gap-2.shadow-sm.justify-content-start.card-component
+      div.align-self-center.ms-2
+        +avatar(avatar)
+      div.my-4.align-self-center.message
+        p.h6.fw-bold= name
+        div.status.pb-0.fw-light.small.text-truncate= message
+      div.my-4.ms-auto.me-4.align-self-start
+        div.status.small.fw-light= timestamp
