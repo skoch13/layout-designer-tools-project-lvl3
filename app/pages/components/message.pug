@@ -1,6 +1,8 @@
 include avatar
 mixin message(name, message, timestamp, avatar)
-  a.text-decoration-none.text-black(href='#')
+  - const href = name == 'Вениамин Редакторович' ? 'chat.html' : ''
+
+  a.text-decoration-none.text-black(href= href)
     div.mt-2.mb-2.d-flex.gap-2.shadow-sm.justify-content-start.card-component
       div.align-self-center.ms-2
         +avatar(avatar)
