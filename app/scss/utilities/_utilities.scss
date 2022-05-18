@@ -1,39 +1,39 @@
 $utilities: map-merge(
-    $utilities,
-    (
-      "border": map-merge(
-          map-get($utilities, "border"),
-          (responsive: true),
-      ),
-      "radius":(
-        property: border-radius,
-        responsive: true,
-        class: "radius",
-        values: (
-          null: 1rem,
-          50: 50px,
-          90: 90px,
-          100: 100px,
-          0: 0
-        )
-      ),
-      "radius-left-top": (
-        property: border-top-left-radius,
-        class: "radius-left-top",
-        responsive: true,
-        values: (null: 1rem)
-      ),
-      "radius-left": (
-        property: border-top-left-radius border-bottom-left-radius,
-        class: "radius-left",
-        responsive: true,
-        values: (null: 1rem)
-      ),
-      "radius-right": (
-        property: border-bottom-right-radius border-top-right-radius,
-        class: "radius-right",
-        responsive: true,
-        values: (null: 1rem)
+  $utilities,
+  (
+    "border": map-merge(
+      map-get($utilities, "border"),
+      (responsive: true),
+    ),
+    "radius":(
+      property: border-radius,
+      responsive: true,
+      class: "radius",
+      values: (
+        null: 1rem,
+        50: 50px,
+        90: 90px,
+        100: 100px,
+        0: 0
       )
+    ),
+    "radius-left-top": (
+      property: border-top-left-radius,
+      class: "radius-left-top",
+      responsive: true,
+      values: (null: 1rem)
+    ),
+    "radius-left": (
+      property: border-top-left-radius border-bottom-left-radius,
+      class: "radius-left",
+      responsive: true,
+      values: (null: 1rem)
+    ),
+    "radius-right": (
+      property: border-bottom-right-radius border-top-right-radius,
+      class: "radius-right",
+      responsive: true,
+      values: (null: 1rem)
     )
+  )
 );
