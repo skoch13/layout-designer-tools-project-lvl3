@@ -51,6 +51,12 @@
   background-color: $light;
 }
 
+.incoming-message small,
+.incoming-message .msg,
+{
+  color: $secondary;
+}
+
 .outgoing-message .msg {
   color: $light;
 }
