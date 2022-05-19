@@ -47,6 +47,14 @@
   }
 }
 
+.incoming-message {
+  background-color: $light;
+}
+
+.outgoing-message .msg {
+  color: $light;
+}
+
 .status {
   color: $secondary;
 }

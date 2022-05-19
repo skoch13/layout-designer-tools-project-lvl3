@@ -1,5 +1,6 @@
 mixin chat-message(name, message, timestamp)
-  div.d-flex.flex-column.radius-50.p-3
-    p.h6.fw-bold= name
-    p.text-secondary= message
-    p.small.text-secondary= timestamp
+  div.d-flex.flex-column.radius.mt-3.shadow-sm.align-items-start.justify-content-center.align-content-center&attributes(attributes)
+    div.p-4
+      p.h6.fw-bold= name
+      p.msg.mb-2= message
+      small.pt-2.mb-0.border-top.border-light.text-secondary= timestamp
