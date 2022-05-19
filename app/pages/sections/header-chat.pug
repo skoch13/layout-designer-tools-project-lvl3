@@ -7,11 +7,9 @@
 
 include ../components/avatar
 
-mixin header-chat
-  div.mb-3.d-flex.card-component.justify-content-start.text-decoration-none.position-sticky.border-bottom.w-100.h-100
-    div.align-self-center.ms-2
-      +avatar(user.avatar)
-    div.my-4.lh-1.align-self-end
-      p.h6.fw-bold= user.name
-      div.status.pb-0.fw-normal.small= user.status
-
+div.mb-3.d-flex.card-component.position-sticky.text-decoration-none.border-bottom.w-100
+  div.align-self-center.ms-2
+    +avatar(user.avatar)
+  div.my-4.lh-1.align-self-end
+    p.h6.fw-bold= user.name
+    small.status.pb-0.fw-normal= user.status

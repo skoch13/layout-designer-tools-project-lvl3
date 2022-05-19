@@ -1,10 +1,9 @@
 include header-chat
-#current-chat.d-flex.flex-column.align-items-center.justify-content-center.h-100.overflow-auto
-  +header-chat
-  main.p-4
-    include current-chat
-  div.p-0.p-md-2.mx-5.border-top.d-inline-flex.align-content-between.w-90.align-items-center
-    input.form-control-plaintext.fw-normal(type='text', placeholder='Напишите сообщение...')
-    div.avatar-sm.fw-bold.text-light.radius-50.bg-primary.d-inline-flex.align-items-center.py-3
-      svg.cursor.d-block.text-center.m-0
-        use(href='images/symbol/sprite.svg#cursor')
+main.flex-grow-1.mb-0.pt-5.px-5.pb-4.d-md-flex.flex-md-column.overflow-auto.flex-grow-1.chat
+  include current-chat
+form.d-flex.align-items-center.mx-md-5.ps-2.py-2.py-md-3.pe-3.pe-md-2.border-top.position-sticky.w-90
+  label.visually-hidden(for='message') Сообщение
+  input#message.form-control-plaintext.fw-normal.flex-grow-1.p-3(type='text', placeholder='Напишите сообщение...')
+  button.btn.d-flex.ms-3.p-2.border-primary.rounded-circle.bg-primary.text-light(type='submit')
+    svg.cursor.d-block.text-center.m-0
+      use(href='images/symbol/sprite.svg#cursor')
