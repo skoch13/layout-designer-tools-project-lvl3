@@ -1,4 +1,5 @@
 - const current = 'chat'
+-const active = false;
 include sections/right-chat
 doctype html
 html(lang='ru')
@@ -15,7 +16,7 @@ html(lang='ru')
               include sections/messages
             div.tab-pane(id='profile' role='tabpanel' aria-labelledby='profile-pill')
               include sections/profile
-            +right-chat(role='tabpanel' aria-labelledby='current-pill' class='d-md-none tab-pane')
+            +right-chat(role='tabpanel' aria-labelledby='current-pill' class='d-flex d-md-none tab-pane')
         div.col-md-8.d-none.d-sm-flex.flex-sm-column.px-0.align-items-start.h-100
-          +right-chat(class='d-flex flex-column h-100')
+          +right-chat
     script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous')
