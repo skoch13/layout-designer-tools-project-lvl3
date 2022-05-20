@@ -73,6 +73,10 @@ p:empty {
   min-width: 0;
 }
 
+.footer {
+  min-width: 0;
+}
+
 .chat {
   @include hide-scrollbar;
 }
