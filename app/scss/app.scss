@@ -81,6 +81,10 @@ p:empty {
   @include hide-scrollbar;
 }
 
+.mobile-chat {
+
+}
+
 @include media-breakpoint-down(sm) {
   .navbar {
     order: 2;
