@@ -34,6 +34,12 @@ $utilities: map-merge(
       class: "radius-right",
       responsive: true,
       values: (null: 1rem)
+    ),
+    "radius-right-bottom": (
+      property: border-bottom-right-radius,
+      class: "radius-right-bottom",
+      responsive: true,
+      values: (null: 1rem)
     )
   )
 );

@@ -1959,7 +1959,7 @@ progress {
   margin-bottom: 1rem;
   color: #212529;
   vertical-align: top;
-  border-color: #dee2e6;
+  border-color: #efefef;
 }
 .table > :not(caption) > * > * {
   padding: 0.5rem 0.5rem;
@@ -5482,7 +5482,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: space-between;
   padding: 1rem 1rem;
-  border-bottom: 1px solid #dee2e6;
+  border-bottom: 1px solid #efefef;
   border-top-left-radius: calc(0.3rem - 1px);
   border-top-right-radius: calc(0.3rem - 1px);
 }
@@ -5509,7 +5509,7 @@ textarea.form-control-lg {
   align-items: center;
   justify-content: flex-end;
   padding: 0.75rem;
-  border-top: 1px solid #dee2e6;
+  border-top: 1px solid #efefef;
   border-bottom-right-radius: calc(0.3rem - 1px);
   border-bottom-left-radius: calc(0.3rem - 1px);
 }
@@ -6728,7 +6728,7 @@ textarea.form-control-lg {
 }
 
 .border {
-  border: 1px solid #dee2e6 !important;
+  border: 1px solid #efefef !important;
 }
 
 .border-0 {
@@ -6736,7 +6736,7 @@ textarea.form-control-lg {
 }
 
 .border-top {
-  border-top: 1px solid #dee2e6 !important;
+  border-top: 1px solid #efefef !important;
 }
 
 .border-top-0 {
@@ -6744,7 +6744,7 @@ textarea.form-control-lg {
 }
 
 .border-end {
-  border-right: 1px solid #dee2e6 !important;
+  border-right: 1px solid #efefef !important;
 }
 
 .border-end-0 {
@@ -6752,7 +6752,7 @@ textarea.form-control-lg {
 }
 
 .border-bottom {
-  border-bottom: 1px solid #dee2e6 !important;
+  border-bottom: 1px solid #efefef !important;
 }
 
 .border-bottom-0 {
@@ -6760,7 +6760,7 @@ textarea.form-control-lg {
 }
 
 .border-start {
-  border-left: 1px solid #dee2e6 !important;
+  border-left: 1px solid #efefef !important;
 }
 
 .border-start-0 {
@@ -7881,6 +7881,10 @@ textarea.form-control-lg {
   border-top-right-radius: 1rem !important;
 }
 
+.radius-right-bottom {
+  border-bottom-right-radius: 1rem !important;
+}
+
 @media (min-width: 576px) {
   .float-sm-start {
     float: left !important;
@@ -7935,7 +7939,7 @@ textarea.form-control-lg {
   }
 
   .border-sm {
-    border: 1px solid #dee2e6 !important;
+    border: 1px solid #efefef !important;
   }
 
   .border-sm-0 {
@@ -8573,6 +8577,10 @@ textarea.form-control-lg {
     border-bottom-right-radius: 1rem !important;
     border-top-right-radius: 1rem !important;
   }
+
+  .radius-right-bottom-sm {
+    border-bottom-right-radius: 1rem !important;
+  }
 }
 @media (min-width: 768px) {
   .float-md-start {
@@ -8628,7 +8636,7 @@ textarea.form-control-lg {
   }
 
   .border-md {
-    border: 1px solid #dee2e6 !important;
+    border: 1px solid #efefef !important;
   }
 
   .border-md-0 {
@@ -9266,6 +9274,10 @@ textarea.form-control-lg {
     border-bottom-right-radius: 1rem !important;
     border-top-right-radius: 1rem !important;
   }
+
+  .radius-right-bottom-md {
+    border-bottom-right-radius: 1rem !important;
+  }
 }
 @media (min-width: 992px) {
   .float-lg-start {
@@ -9321,7 +9333,7 @@ textarea.form-control-lg {
   }
 
   .border-lg {
-    border: 1px solid #dee2e6 !important;
+    border: 1px solid #efefef !important;
   }
 
   .border-lg-0 {
@@ -9959,6 +9971,10 @@ textarea.form-control-lg {
     border-bottom-right-radius: 1rem !important;
     border-top-right-radius: 1rem !important;
   }
+
+  .radius-right-bottom-lg {
+    border-bottom-right-radius: 1rem !important;
+  }
 }
 @media (min-width: 1200px) {
   .float-xl-start {
@@ -10014,7 +10030,7 @@ textarea.form-control-lg {
   }
 
   .border-xl {
-    border: 1px solid #dee2e6 !important;
+    border: 1px solid #efefef !important;
   }
 
   .border-xl-0 {
@@ -10652,6 +10668,10 @@ textarea.form-control-lg {
     border-bottom-right-radius: 1rem !important;
     border-top-right-radius: 1rem !important;
   }
+
+  .radius-right-bottom-xl {
+    border-bottom-right-radius: 1rem !important;
+  }
 }
 @media (min-width: 1600px) {
   .float-xxl-start {
@@ -10707,7 +10727,7 @@ textarea.form-control-lg {
   }
 
   .border-xxl {
-    border: 1px solid #dee2e6 !important;
+    border: 1px solid #efefef !important;
   }
 
   .border-xxl-0 {
@@ -11344,6 +11364,10 @@ textarea.form-control-lg {
   .radius-right-xxl {
     border-bottom-right-radius: 1rem !important;
     border-top-right-radius: 1rem !important;
+  }
+
+  .radius-right-bottom-xxl {
+    border-bottom-right-radius: 1rem !important;
   }
 }
 @media (min-width: 1200px) {
