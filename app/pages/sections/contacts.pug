@@ -1,7 +1,7 @@
 include ../components/searchbar
-
-h2.fw-bold Контакты
-div
-  +searchbar('Поиск по контактам')
+div.pt-5.px-4
+  h2.fw-bold Контакты
   div
-    include ../sections/chats
+    +searchbar('Поиск по контактам')
+    div
+      include ../sections/chats

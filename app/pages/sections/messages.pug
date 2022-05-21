@@ -19,9 +19,9 @@ include ../components/searchbar
     avatar: "/images/avatar_3.jpg"
   }]
 
-
-h2.fw-bold Чаты
-div
-  +searchbar('Поиск по сообщениям')
-  each mes in messages
-    +message(mes.name, mes.message, mes.timestamp, mes.avatar)
+div.pt-5.px-4
+  h2.fw-bold Чаты
+  div
+    +searchbar('Поиск по сообщениям')
+    each mes in messages
+      +message(mes.name, mes.message, mes.timestamp, mes.avatar)
