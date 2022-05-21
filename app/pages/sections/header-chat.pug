@@ -12,4 +12,5 @@ div.mb-3.d-flex.card-component.position-sticky.text-decoration-none.border-botto
     +avatar(user.avatar)
   div.my-4.lh-1.align-self-end
     p.h6.fw-bold= user.name
-    small.status.pb-0.fw-normal= user.status
+    div.small.status.pb-0.fw-normal
+      small= user.status

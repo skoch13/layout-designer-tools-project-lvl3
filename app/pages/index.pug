@@ -7,9 +7,9 @@ html(lang='ru')
         div.col-md-4.border-end-sm.px-0.menu.d-flex.flex-column.h-100
           include sections/header
           div.chat.overflow-auto.tab-content.mb-auto
-            div.tab-pane(id='contacts' role='tabpanel' aria-labelledby='contact-pill')
+            div.tab-pane.active(id='contacts' role='tabpanel' aria-labelledby='contact-pill')
               include sections/contacts
-            div.tab-pane.active(id='chats' role='tabpanel' aria-labelledby='chats-pill')
+            div.tab-pane(id='chats' role='tabpanel' aria-labelledby='chats-pill')
               include sections/messages
             div.tab-pane(id='profile' role='tabpanel' aria-labelledby='profile-pill')
               include sections/profile
