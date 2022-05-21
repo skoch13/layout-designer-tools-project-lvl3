@@ -4,10 +4,11 @@ mixin message(name, message, timestamp, avatar)
 
   a.text-decoration-none.text-black(href= href)
     div.my-2.d-flex.shadow-sm.justify-content-start.card-component
-      div.align-self-center.ms-2
+      div.align-self-center.mx-3
         +avatar(avatar)
       div.my-4.align-self-center.message
-        p.h6.fw-bold= name
-        div.status.pb-0.fw-normal.small.text-truncate= message
+        p.h6.fw-bold.mb-0= name
+        div.status.pb-0.fw-normal.text-truncate
+          small= message
       div.my-4.ms-auto.me-4.align-self-start
         div.status.small.fw-normal= timestamp
