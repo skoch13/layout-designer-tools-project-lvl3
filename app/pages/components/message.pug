@@ -3,12 +3,12 @@ mixin message(name, message, timestamp, avatar)
   - const href = name == 'Вениамин Редакторович' ? 'chat.html' : '#'
 
   a.text-decoration-none.text-black(href= href)
-    div.my-2.d-flex.shadow-sm.justify-content-start.card-component.p-2
+    div.my-2.d-flex.shadow-sm.justify-content-start.card-component
       div.align-self-center.mx-2
         +avatar(avatar)
       div.my-4.align-self-center.message
         p.h6.fw-bold.mb-0= name
-        div.status.pb-0.fw-normal.text-truncate
+        div.status.pb-0.fw-normal.text-truncate.small
           small= message
-      div.my-4.ms-auto.me-4.align-self-start
+      div.my-4.me-4.align-self-start.ms-auto
         div.status.small.fw-normal= timestamp
