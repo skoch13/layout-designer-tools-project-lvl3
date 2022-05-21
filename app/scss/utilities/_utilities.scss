@@ -5,6 +5,14 @@ $utilities: map-merge(
       map-get($utilities, "border"),
       (responsive: true),
     ),
+    "border-end": map-merge(
+        map-get($utilities, "border-end"),
+        (responsive: true),
+    ),
+    "border-start": map-merge(
+        map-get($utilities, "border-start"),
+        (responsive: true),
+    ),
     "radius":(
       property: border-radius,
       responsive: true,
