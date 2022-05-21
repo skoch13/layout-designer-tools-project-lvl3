@@ -6,21 +6,25 @@ header.order-last.order-md-first.radius-left-top-md.text-light.bg-primary
     ul.nav.nav-pills.border-0.bg-primary.flex-nowrap.justify-content-between.align-self-center(role='tablist')
       if current == 'chat'
         li.nav-item.d-md-none.d-block(role='presentation')
-          a.nav-link.d-flex.flex-column.flex-md-row.align-items-center.py-0.text-light(href='#current-chat-pill' data-bs-toggle='pill' id='current-pill' data-bs-target='#current-chat-pill' role='tab' aria-controls="current-chat-pill" aria-selected="true")
+          div(data-bs-toggle='pill' id='current-pill' data-bs-target='#current-chat-pill' role='tab' aria-controls='current-chat-pill' aria-selected='true')
+           a.nav-link.d-flex.flex-column.flex-md-row.align-items-center.py-0.text-light(href='#current-chat-pill')
             svg.icon
               use(href='images/symbol/sprite.svg#chat-left-text')
       li.nav-item(role='presentation')
-        a.nav-link.d-flex.flex-column.flex-md-row.align-items-center.py-0.text-light(href='#contacts' data-bs-toggle='pill' id='contact-pill' data-bs-target='#contacts' role='tab' aria-controls="contacts" aria-selected="true")
-          svg.icon
-            use(href='images/symbol/sprite.svg#people')
-          span.small.ms-2.align-self-center.d-none.d-sm-block Контакты
+        div(data-bs-toggle='pill' id='contact-pill' data-bs-target='#contacts' role='tab' aria-controls='contacts' aria-selected='true')
+          a.nav-link.d-flex.flex-column.flex-md-row.align-items-center.py-0.text-light(href='#contacts')
+            svg.icon
+              use(href='images/symbol/sprite.svg#people')
+            span.small.ms-2.align-self-center.d-none.d-sm-block Контакты
       li.nav-item(role='presentation')
-        a.nav-link.d-flex.flex-column.flex-xl-row.align-items-center.ps-3.py-0.pe-3.pe-md-3.text-light(href='#chats' data-bs-toggle='pill' id='chats-pill' data-bs-target='#chats' role='tab' aria-controls="chats" aria-selected="false")
-          svg.icon
-            use(href='images/symbol/sprite.svg#chat')
-          span.small.ms-2.align-self-center.d-none.d-sm-block Сообщения
+        div(data-bs-toggle='pill' id='chats-pill' data-bs-target='#chats' role='tab' aria-controls='chats' aria-selected='false')
+          a.nav-link.d-flex.flex-column.flex-xl-row.align-items-center.ps-3.py-0.pe-3.pe-md-3.text-light(href='#chats')
+            svg.icon
+              use(href='images/symbol/sprite.svg#chat')
+            span.small.ms-2.align-self-center.d-none.d-sm-block Сообщения
       li.nav-item(role='presentation')
-        a.nav-link.d-flex.flex-column.flex-xl-row.align-items-center.ps-3.py-0.pe-3.pe-md-3.text-light(href='#profile' data-bs-toggle='pill' id='profile-pill' data-bs-target='#profile' role='tab' aria-controls="profile" aria-selected="false")
-          svg.icon
-            use(href='images/symbol/sprite.svg#person')
-          span.small.ms-2.align-self-center.d-none.d-sm-block Профиль
+        div(data-bs-toggle='pill' id='profile-pill' data-bs-target='#profile' role='tab' aria-controls='profile' aria-selected='false')
+          a.nav-link.d-flex.flex-column.flex-xl-row.align-items-center.ps-3.py-0.pe-3.pe-md-3.text-light(href='#profile')
+            svg.icon
+              use(href='images/symbol/sprite.svg#person')
+            span.small.ms-2.align-self-center.d-none.d-sm-block Профиль
