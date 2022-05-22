@@ -3,4 +3,5 @@ mixin chat-message(name, message, timestamp)
     div.p-3
       p.h6.fw-bold= name
       p.msg.mb-0.pb-2.border-bottom= message
-      small.pt-1= timestamp
+      div.pt-1.small
+        small= timestamp
