@@ -11561,6 +11561,10 @@ textarea.form-control-lg {
   color: #6c757d;
 }
 
+.outgoing-message small, .outgoing-message .small {
+  color: #efefef;
+}
+
 .outgoing-message .msg {
   color: #fbfbfb;
 }
@@ -11591,8 +11595,16 @@ p:empty {
   display: none;
 }
 
+.chat-message {
+  width: 75%;
+}
+
 @media (max-width: 575.98px) {
   .navbar {
     order: 2;
+  }
+
+  .chat-message {
+    width: 100%;
   }
 }
