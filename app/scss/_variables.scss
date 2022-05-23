@@ -1,0 +1,69 @@
+// Задаем наши цвета
+
+$theme-colors: (
+  "gray": #efefef,
+  "primary": #4545a5,
+  "secondary": #6c757d,
+  "success": #28a745,
+  "info": #17a2b8,
+  "warning": #ffc107,
+  "danger": #dc3545,
+  "light": #fbfbfb,
+  "dark": #343a40,
+);
+
+// Создадим новый брейкпоинт xxl (1600px / 1540px)
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1600px,
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1140px,
+  xxl: 1540px,
+);
+
+// Включаем миксин box-shadow
+
+$enable-shadows: true;
+
+.sticky-bottom {
+  position: -webkit-sticky;
+  position: sticky;
+  bottom: 0;
+}
+
+// max and min height
+
+.max-vh {
+  max-height: 100vh !important;
+}
+
+.min-vh {
+  min-height: 100vh !important;
+}
+
+// left-section
+
+.left-section {
+  width: 100% !important;
+}
+
+@media (min-width: 768px) {
+  .left-section {
+    width: 33% !important;
+    min-width: 464px;
+  }
+
+  .min-vh {
+    min-height: auto !important;
+  }
+}

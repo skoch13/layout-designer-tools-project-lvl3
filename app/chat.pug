@@ -1,0 +1,39 @@
+doctype html
+html(lang="ru")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Мессенджер «Hexlet Chat»
+        link(rel="stylesheet", href="./css/app.css")
+
+        // link bootstrap icons
+        link(rel="stylesheet", href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css")
+        body.bg-gray.d-flex.justify-content-center.overflow-hidden.container-xxl.p-0.max-vh
+                
+            // Left section & mobile
+            .left-section.bg-white.overflow-auto.hide-scroll.m-0.ms-md-4.my-md-4.radius-left.d-flex.flex-column
+                
+                // Navigation menu
+                include pug/navigation.pug
+                
+                // Left main section
+                .tab-content.overflow-auto(id="nav-tabContent")
+                    .tab-pane.fade(id="current-chat" role="tabpanel" aria-labelledby="current-chat-tab")
+                        include pug/current-chat.pug
+                    .tab-pane.fade.px-4(id="contacts" role="tabpanel" aria-labelledby="contacts-tab") 
+                        include pug/contact.pug
+                    .tab-pane.fade.px-4.show.active(id="chats" role="tabpanel" aria-labelledby="chats-tab")
+                        include pug/chats.pug
+                    .tab-pane.fade.px-4(id="profile" role="tabpanel" aria-labelledby="profile-tab")
+                        include pug/profile.pug
+
+            // Right section
+            .bg-white.overflow-auto.hide-scroll.border-0.border-start.d-none.d-md-block.m-0.me-md-4.my-md-4.w-100.radius-right
+                include pug/current-chat.pug
+
+        // Insert Scripts
+        script(src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous") 
+
+
+        
