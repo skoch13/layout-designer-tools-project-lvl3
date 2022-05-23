@@ -1,0 +1,18 @@
+mixin dialog(dialog)    
+  if dialog.type === "interlocutor"
+    div.row.justify-content-start
+      div.col-12.col-lg-9.mt-3.mt-lg-0.mb-lg-3
+        div.d-flex
+          img(src=dialog.avatar alt=dialog.name).rounded-circle.mr-3.square-50.align-self-end.d-none.d-lg-block
+          div(style="box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);").p-4.bg-light.radius
+            div.font-weight-bold.mb-1=dialog.name
+            div.text-secondary.border-bottom.pb-2=dialog.text
+            small.text-secondary.mb-4=dialog.session
+  else
+    div.row.justify-content-end
+      div.col-12.col-lg-9.mt-3.mt-lg-0.mb-lg-3
+        div.d-flex
+          img(src=dialog.avatar alt=dialog.name).rounded-circle.mr-3.square-50.align-self-end.d-none.d-lg-block
+          div(style="box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.08);").p-4.bg-primary.radius
+            div.text-light.border-bottom.pb-2=dialog.text
+            small.text-grey=dialog.session

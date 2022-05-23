@@ -1,0 +1,17 @@
+include ../mixins/icon
+block variables
+
+doctype html
+html(lang="en").h-100
+  include ../modules/head
+  body.h-100
+    main.container-xxl.h-100
+      section.h-100
+        div.row.no-gutters.h-100
+          div.col-12.col-lg-6.col-xl-4.h-100.overflow-auto.hide-scrollbar.d-flex.flex-column
+            include ../modules/header
+            div.px-4.pt-5
+              block left-side
+          div.col-12.col-lg-6.col-xl-8.d-none.d-lg-block.border-lg-left.h-100.overflow-auto.hide-scrollbar
+            block right-side
+    include ../modules/scripts

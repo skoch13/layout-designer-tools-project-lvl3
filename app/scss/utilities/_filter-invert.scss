@@ -1,0 +1,15 @@
+@each $breakpoint in map-keys($grid-breakpoints) {
+
+  @include media-breakpoint-up($breakpoint) {
+    $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
+
+    @for $i from 1 through 10 {
+      $side: $i * 10;
+      $percent: $i * 10%;
+
+      .filter-invert#{$infix}-#{$side} {
+        filter: invert($percent);
+      }
+    }
+  }
+}

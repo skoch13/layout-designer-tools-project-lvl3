@@ -1,0 +1,6 @@
+mixin contact(name, status, avatar)
+  a(href="#").d-flex.align-items-center.shadow.text-decoration-none.mt-3.px-3
+    img(src=avatar alt=name).square-50.rounded-circle
+    span.flex-grow-1.p-4
+      span.contact-name.text-dark.font-weight-bold.font-size-3=name
+      small.contact-status.text-secondary.d-block=status

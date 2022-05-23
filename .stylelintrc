@@ -1,15 +1,28 @@
-extends:
-- stylelint-config-standard-scss
-- stylelint-config-rational-order
-
-plugins:
-- stylelint-scss
-- stylelint-order
-
-rules:
-declaration-empty-line-before: null
-plugin/rational-order:
-- true
-- empty-line-between-groups: true
-at-rule-no-unknown: null
-scss/at-rule-no-unknown: true
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-rational-order"
+  ],
+  "plugins": [
+    "stylelint-order",
+    "stylelint-scss"
+  ],
+  "rules": {
+	  "declaration-empty-line-before": null,
+    "plugin/rational-order": true,
+	  "at-rule-no-unknown": null,
+	  "scss/at-rule-no-unknown": true,
+    "at-rule-no-vendor-prefix": true,
+    "at-rule-empty-line-before": "always",
+    "scss/at-import-partial-extension": "never",
+    "block-closing-brace-newline-before": "always",
+    "block-closing-brace-newline-after": "always",
+    "at-rule-name-case": "lower",
+    "at-rule-name-space-after": "always",
+    "at-rule-semicolon-newline-after": "always",
+    "at-rule-semicolon-space-before": "never",
+    "no-descending-specificity": null,
+    "no-duplicate-selectors": null,
+    "font-family-no-missing-generic-family-keyword": null
+  }
+}

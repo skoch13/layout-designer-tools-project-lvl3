@@ -1,58 +1,22 @@
-const { src, dest, parallel, series, watch } = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const pug = require('gulp-pug');
-const browserSync = require('browser-sync').create();
-const svgSprite = require('gulp-svg-sprite');
+const gulp = require('gulp');
+const images = require('./gulp/images');
+const spriteSVG = require('./gulp/spriteSVG');
+const pug2html = require('./gulp/pug2html');
+const styles = require('./gulp/styles');
+const scripts = require('./gulp/scripts');
+const clean = require('./gulp/clean');
+const serve = require('./gulp/serve');
 
-const browserSyncJob = () => {
-  browserSync.init({
-    server: "build/"
-  });
+const { series, parallel } = gulp;
 
-  watch('app/scss/**/*.scss', buildSass);
-  watch('app/pages/**/*.pug', buildPug);
-};
+const dev = parallel(images, spriteSVG, pug2html, styles, scripts);
 
-const buildSass = () => {
-  console.log('Compiling SASS');
+exports.images = images;
+exports.spriteSVG = spriteSVG;
+exports.pug2html = pug2html;
+exports.styles = styles;
+exports.scripts = scripts;
+exports.clean = clean;
+exports.serve = serve;
 
-  return src('app/scss/main.scss')
-    .pipe(sass())
-    .pipe(dest('build/styles/'))
-    .pipe(browserSync.stream());
-}
-
-const buildPug = () => {
-  console.log('Compiling Pug');
-
-  return src('app/pages/*.pug')
-    .pipe(pug())
-    .pipe(dest('build/'))
-    .pipe(browserSync.stream());
-}
-
-const copyImages = () => {
-  console.log('Copying images');
-
-  return src('app/images/*.jpg').pipe(dest('build/images'))
-}
-
-const prepareSvg = () => {
-  console.log('Preparing SVGs');
-
-  const config = {
-    mode: {
-      symbol: {
-        sprite: 'sprite.svg'
-      }
-    }
-  }
-
-  return src('app/images/icons/*.svg').pipe(svgSprite(config)).pipe(dest('build/images'))
-}
-
-const build = parallel(buildSass, buildPug, copyImages, prepareSvg);
-
-exports.server = browserSyncJob;
-exports.build = build;
-exports.dev = series(build, browserSyncJob);
+exports.default = series(clean, dev, serve);

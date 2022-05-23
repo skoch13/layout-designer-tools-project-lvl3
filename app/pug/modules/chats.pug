@@ -1,0 +1,33 @@
+include ../mixins/chat
+include ../mixins/search
+
+-
+  var chats = [
+    {
+      name: "Вениамин Редакторович",
+      message: "o_O",
+      avatar: "./images/content/avatar_4.jpg",
+      time: "11:45"
+    },
+    {
+      name: "Джедай Падаванов",
+      message: "Привет, скоро третий проект? Уже скоро надо будет выложить",
+      avatar: "./images/content/avatar_2.jpg",
+      time: "10:12"      
+    },
+    {
+      name: "Алексей Примадонин",
+      message: "Тесты упали >_<",
+      avatar: "./images/content/avatar_3.jpg",
+      time: "08:53"      
+    },
+  ] 
+
+h2.mb-3.font-weight-bold Чаты
+
++search("Поиск по сообщениям")
+
+div.chats
+  each chat in chats
+    div.text-muted.mb-3
+      +chat(chat.name, chat.message, chat.avatar, chat.time)

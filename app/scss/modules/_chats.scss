@@ -1,0 +1,20 @@
+$chat: ".chat";
+
+.chats {
+  .chat {
+
+    @include hover-focus() {
+      background-color: $primary;
+
+      #{$chat} {
+        &-name {
+          color: $light !important;
+        }
+
+        &-description {
+          color: $grey !important;
+        }
+      }
+    }
+  }
+}

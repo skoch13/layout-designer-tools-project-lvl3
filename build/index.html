@@ -1,1 +1,112 @@
-<!DOCTYPE html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css"><title>Hexlet чат</title><link rel="stylesheet" href="./styles/main.css"></head><body class="vh-100 p-md-4"><div class="container-xxl h-100 overflow-hidden radius-left-sm radius-right-bottom-sm"><div class="row h-100"><div class="col-md-4 border-end-sm px-0 menu d-flex flex-column h-100"><header class="order-last order-md-first radius-left-top-md text-light bg-primary"><nav class="d-flex p-3 justify-content-between align-items-center"><div class="align-self-center flex-grow-1"><a class="navbar-brand me-auto ms-1" href="#"><svg class="logo"><use href="images/symbol/sprite.svg#logo"></use></svg></a></div><ul class="nav nav-pills border-0 bg-primary flex-nowrap d-flex mb-1 justify-content-around" role="tablist"><li class="nav-item me-3" role="presentation"><div data-bs-toggle="pill" id="contact-pill" data-bs-target="#contacts" role="tab" aria-controls="contacts" aria-selected="true"><a class="nav-link d-flex flex-column flex-md-row aign-items-center text-light" href="#contacts"><svg class="icon"><use href="images/symbol/sprite.svg#people"></use></svg><span class="small ms-2 align-self-center d-none d-sm-block">Контакты</span></a></div></li><li class="nav-item me-3" role="presentation"><div data-bs-toggle="pill" id="chats-pill" data-bs-target="#chats" role="tab" aria-controls="chats" aria-selected="false"><a class="nav-link d-flex flex-column flex-md-row align-items-center text-light" href="#chats"><svg class="icon"><use href="images/symbol/sprite.svg#chat"></use></svg><span class="small ms-2 align-self-center d-none d-sm-block">Сообщения</span></a></div></li><li class="nav-item" role="presentation"><div data-bs-toggle="pill" id="profile-pill" data-bs-target="#profile" role="tab" aria-controls="profile" aria-selected="false"><a class="nav-link d-flex flex-column flex-md-row align-items-center text-light" href="#profile"><svg class="icon"><use href="images/symbol/sprite.svg#person"></use></svg><span class="small ms-2 align-self-center d-none d-sm-block">Профиль</span></a></div></li></ul></nav></header><div class="chat overflow-auto tab-content mb-auto"><div class="tab-pane active" id="contacts" role="tabpanel" aria-labelledby="contact-pill"><div class="pt-5 px-4 mb-0"><h2 class="fw-bold">Контакты</h2><div><div class="my-4"><input class="form-control-plaintext border-0 border-bottom p-4 fw-normal lh-1" type="text" placeholder="Поиск по контактам"></div><div><h6 class="text-muted mt-5">A</h6><a class="text-decoration-none text-black mt-1" href="#"><div class="mt-3 mb-3 d-flex card-component contact justify-content-start gap-2 shadow-sm text-decoration-none"><div class="align-self-center ms-2"><img class="d-md-block avatar-sm radius-50 ms-2 me-3" src="/images/avatar_3.jpg" alt="person image"></div><div class="my-4 lh-1 align-self-end"><p class="h6 fw-bold">Алексей Примадонин</p><div class="status pb-0 fw-normal small">Онлайн</div></div></div></a><h6 class="text-muted mt-5">В</h6><a class="text-decoration-none text-black mt-1" href="#"><div class="mt-3 mb-3 d-flex card-component contact justify-content-start gap-2 shadow-sm text-decoration-none"><div class="align-self-center ms-2"><img class="d-md-block avatar-sm radius-50 ms-2 me-3" src="/images/avatar_4.jpg" alt="person image"></div><div class="my-4 lh-1 align-self-end"><p class="h6 fw-bold">Вениамин Редакторович</p><div class="status pb-0 fw-normal small">Онлайн</div></div></div></a><h6 class="text-muted mt-5">Д</h6><a class="text-decoration-none text-black mt-1" href="#"><div class="mt-3 mb-3 d-flex card-component contact justify-content-start gap-2 shadow-sm text-decoration-none"><div class="align-self-center ms-2"><img class="d-md-block avatar-sm radius-50 ms-2 me-3" src="/images/avatar_2.jpg" alt="person image"></div><div class="my-4 lh-1 align-self-end"><p class="h6 fw-bold">Джедай Падаванов</p><div class="status pb-0 fw-normal small">Был онлайн вчера</div></div></div></a><h6 class="text-muted mt-5">К</h6><a class="text-decoration-none text-black mt-1" href="#"><div class="mt-3 mb-3 d-flex card-component contact justify-content-start gap-2 shadow-sm text-decoration-none"><div class="align-self-center ms-2"><img class="d-md-block avatar-sm radius-50 ms-2 me-3" src="/images/avatar_1.jpg" alt="person image"></div><div class="my-4 lh-1 align-self-end"><p class="h6 fw-bold">Кодовёнок Хекслетович</p><div class="status pb-0 fw-normal small">Был онлайн 3 часа назад</div></div></div></a><a class="text-decoration-none text-black mt-1" href="#"><div class="mt-3 mb-3 d-flex card-component contact justify-content-start gap-2 shadow-sm text-decoration-none"><div class="align-self-center ms-2"><img class="d-md-block avatar-sm radius-50 ms-2 me-3" src="/images/avatar_5.jpg" alt="person image"></div><div class="my-4 lh-1 align-self-end"><p class="h6 fw-bold">Королева Верстальщина</p><div class="status pb-0 fw-normal small">Была онлайн вчера</div></div></div></a><h6 class="text-muted mt-5">П</h6><a class="text-decoration-none text-black mt-1" href="#"><div class="mt-3 mb-3 d-flex card-component contact justify-content-start gap-2 shadow-sm text-decoration-none"><div class="align-self-center ms-2"><img class="d-md-block avatar-sm radius-50 ms-2 me-3" src="/images/avatar_6.jpg" alt="person image"></div><div class="my-4 lh-1 align-self-end"><p class="h6 fw-bold">Питонист Джангович</p><div class="status pb-0 fw-normal small">Был онлайн вчера</div></div></div></a></div></div></div></div><div class="tab-pane" id="chats" role="tabpanel" aria-labelledby="chats-pill"><div class="pt-5 px-4"><h2 class="fw-bold mb-0">Чаты</h2><div><div class="my-4"><input class="form-control-plaintext border-0 border-bottom p-4 fw-normal lh-1" type="text" placeholder="Поиск по сообщениям"></div><a class="text-decoration-none text-black" href="chat.html"><div class="my-3 d-flex shadow-sm justify-content-start card-component text-truncate"><div class="align-self-center m-3"><img class="d-md-block avatar-sm radius-50 ms-2 me-3" src="/images/avatar_4.jpg" alt="person image"></div><div class="my-4 align-self-center message me-4 d-flex flex-column flex-grow-1"><div class="d-inline-flex"><p class="h6 fw-bold mb-0 me-1">Вениамин Редакторович</p><p class="status small fw-light opacity-50 mb-0 ms-auto">11:45</p></div><div class="status pb-0 fw-light text-truncate m-0"><small>o_O</small></div></div></div></a><a class="text-decoration-none text-black" href="#"><div class="my-3 d-flex shadow-sm justify-content-start card-component text-truncate"><div class="align-self-center m-3"><img class="d-md-block avatar-sm radius-50 ms-2 me-3" src="/images/avatar_2.jpg" alt="person image"></div><div class="my-4 align-self-center message me-4 d-flex flex-column flex-grow-1"><div class="d-inline-flex"><p class="h6 fw-bold mb-0 me-1">Джедай Падаванов</p><p class="status small fw-light opacity-50 mb-0 ms-auto">10:12</p></div><div class="status pb-0 fw-light text-truncate m-0"><small>Привет, скоро третий проект? Уже скоро надо будет выложить</small></div></div></div></a><a class="text-decoration-none text-black" href="#"><div class="my-3 d-flex shadow-sm justify-content-start card-component text-truncate"><div class="align-self-center m-3"><img class="d-md-block avatar-sm radius-50 ms-2 me-3" src="/images/avatar_3.jpg" alt="person image"></div><div class="my-4 align-self-center message me-4 d-flex flex-column flex-grow-1"><div class="d-inline-flex"><p class="h6 fw-bold mb-0 me-1">Алексей Примадонин</p><p class="status small fw-light opacity-50 mb-0 ms-auto">08:53</p></div><div class="status pb-0 fw-light text-truncate m-0"><small>Тесты упали &gt;_&lt;</small></div></div></div></a></div></div></div><div class="tab-pane" id="profile" role="tabpanel" aria-labelledby="profile-pill"><div class="pt-5 px-4"><h2 class="fw-bold">Профиль</h2><div><div class="my-4"><input class="form-control-plaintext border-0 border-bottom p-4 fw-normal lh-1" type="text" placeholder="Поиск по сообщениям"></div><div class="mt-4"><div class="card text-center py-5 border-0 rounded"><img class="card-img-top avatar-md radius-90 align-self-center" src="images/avatar_1.jpg" alt="profile pic"><div class="card-body"><p class="fw-bold card-title m-3">Кодовёнок Хекслетович</p><p class="card-text fw-normal status mt-3">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p></div></div><div class="mt-5"><ul class="list-group list-group-flush mx-4"><li class="list-group-item d-flex py-2"><div><div class="fw-normal small status">Страна</div><div class="fw-normal small">Москва, Россия</div></div><div class="ms-auto align-self-center"><i class="bi bi-globe text-black-50"></i></div></li><li class="list-group-item d-flex py-2"><div><div class="fw-normal small status">Телефон</div><div class="fw-normal small">+7 (499) 123-45-67</div></div><div class="ms-auto align-self-center"><i class="bi bi-telephone text-black-50"></i></div></li><li class="list-group-item d-flex py-2"><div><div class="fw-normal small status">Email</div><div class="fw-normal small">nikita.m@hexlet.io</div></div><div class="ms-auto align-self-center"><i class="bi bi-envelope text-black-50"></i></div></li><li class="list-group-item d-flex py-2"><div><div class="fw-normal small status">Twitter</div><div class="fw-normal small">@n_mikhaylov</div></div><div class="ms-auto align-self-center"><i class="bi bi-people text-black-50"></i></div></li></ul></div></div></div></div></div></div></div><div class="col align-self-center d-none d-sm-block h-100 px-0"><div class="d-flex flex-column align-items-center justify-content-center h-100"><img class="avatar radius-100" src="images/avatar_1.jpg" alt="user image"><p class="fw-bold mb-0">Привет, Кодовёнок</p><p class="small text-muted">Выбери чат, чтобы начать общаться</p></div></div></div></div><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script></body></html>
+<!DOCTYPE html>
+<html class="h-100" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Мессенджер «Hexlet Chat» | Главная</title>
+  </head>
+  <body class="h-100">
+    <main class="container-xxl h-100">
+      <section class="h-100">
+        <div class="row no-gutters h-100">
+          <div class="col-12 col-lg-6 col-xl-4 h-100 overflow-auto hide-scrollbar d-flex flex-column">
+            <header class="d-flex flex-row justify-content-between align-items-center p-3 pl-4 height-72">
+              <svg class="fill-white" width="15" height="25">
+                <use xlink:href="images/sprite/sprite.svg#logo"></use>
+              </svg>
+              <nav class="nav" role="tablist" id="top-menu-tab"><a class="nav-link text-light py-2 px-4 px-lg-3 active" id="contacts-tab" href="#contacts" data-toggle="tab" role="tab" aria-controls="contacts" aria-selected>
+                              <svg class="nav-link-icon fill-light">
+                                <use xlink:href="images/sprite/sprite.svg#people"></use>
+                              </svg>Контакты</a><a class="nav-link text-light py-2 px-4 px-lg-3 " id="chats-tab" href="#chats" data-toggle="tab" role="tab" aria-controls="chats">
+                              <svg class="nav-link-icon fill-light">
+                                <use xlink:href="images/sprite/sprite.svg#chat"></use>
+                              </svg>Сообщения</a><a class="nav-link text-light py-2 px-4 px-lg-3 " id="profile-tab" href="#profile" data-toggle="tab" role="tab" aria-controls="profile">
+                              <svg class="nav-link-icon fill-light">
+                                <use xlink:href="images/sprite/sprite.svg#person"></use>
+                              </svg>Профиль</a>
+              </nav>
+            </header>
+            <div class="px-4 pt-5">
+              <div class="tab-content">
+                <div class="tab-pane fade show active" aria-labelledby="contacts-tab" id="contacts">
+                  <h2 class="mb-3 font-weight-bold">Контакты</h2>
+                                    <form class="form-group mb-5">
+                                      <input class="form-control-plaintext border-bottom px-4 py-3 bg-white" type="search" placeholder="Поиск по контактам">
+                                    </form>
+                  <div class="contacts">
+                    <div class="text-muted mb-5"><span class="text-secondary font-size-3">A</span><a class="d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="#"><img class="square-50 rounded-circle" src="./images/content/avatar_3.jpg" alt="Алексей Примадонин"><span class="flex-grow-1 p-4"><span class="contact-name text-dark font-weight-bold font-size-3">Алексей Примадонин</span><small class="contact-status text-secondary d-block">Онлайн</small></span></a>
+                    </div>
+                    <div class="text-muted mb-5"><span class="text-secondary font-size-3">В</span><a class="d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="#"><img class="square-50 rounded-circle" src="./images/content/avatar_4.jpg" alt="Вениамин Редакторович"><span class="flex-grow-1 p-4"><span class="contact-name text-dark font-weight-bold font-size-3">Вениамин Редакторович</span><small class="contact-status text-secondary d-block">Онлайн</small></span></a>
+                    </div>
+                    <div class="text-muted mb-5"><span class="text-secondary font-size-3">Д</span><a class="d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="#"><img class="square-50 rounded-circle" src="./images/content/avatar_2.jpg" alt="Джедай Падаванов"><span class="flex-grow-1 p-4"><span class="contact-name text-dark font-weight-bold font-size-3">Джедай Падаванов</span><small class="contact-status text-secondary d-block">Был онлайн вчера</small></span></a>
+                    </div>
+                    <div class="text-muted mb-5"><span class="text-secondary font-size-3">К</span><a class="d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="#"><img class="square-50 rounded-circle" src="./images/content/avatar_1.jpg" alt="Кодовёнок Хекслетович"><span class="flex-grow-1 p-4"><span class="contact-name text-dark font-weight-bold font-size-3">Кодовёнок Хекслетович</span><small class="contact-status text-secondary d-block">Был онлайн 3 часа назад</small></span></a><a class="d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="#"><img class="square-50 rounded-circle" src="./images/content/avatar_5.jpg" alt="Королева Верстальщина"><span class="flex-grow-1 p-4"><span class="contact-name text-dark font-weight-bold font-size-3">Королева Верстальщина</span><small class="contact-status text-secondary d-block">Была онлайн вчера</small></span></a>
+                    </div>
+                    <div class="text-muted mb-5"><span class="text-secondary font-size-3">П</span><a class="d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="#"><img class="square-50 rounded-circle" src="./images/content/avatar_6.jpg" alt="Питонист Джангович"><span class="flex-grow-1 p-4"><span class="contact-name text-dark font-weight-bold font-size-3">Питонист Джангович</span><small class="contact-status text-secondary d-block">Был онлайн вчера</small></span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" aria-labelledby="chats-tab" id="chats">
+                  <h2 class="mb-3 font-weight-bold">Чаты</h2>
+                                    <form class="form-group mb-5">
+                                      <input class="form-control-plaintext border-bottom px-4 py-3 bg-white" type="search" placeholder="Поиск по сообщениям">
+                                    </form>
+                  <div class="chats">
+                    <div class="text-muted mb-3"><a class="chat d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="chat.html"><img class="square-50 rounded-circle" src="./images/content/avatar_4.jpg" alt="Вениамин Редакторович"><span class="flex-grow-1 p-4 overflow-hidden"><span class="d-flex justify-content-between"><span class="chat-name text-dark font-weight-bold font-size-3">Вениамин Редакторович</span><small class="text-secondary">11:45</small></span><small class="chat-description text-truncate text-secondary d-block">o_O</small></span></a>
+                    </div>
+                    <div class="text-muted mb-3"><a class="chat d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="chat.html"><img class="square-50 rounded-circle" src="./images/content/avatar_2.jpg" alt="Джедай Падаванов"><span class="flex-grow-1 p-4 overflow-hidden"><span class="d-flex justify-content-between"><span class="chat-name text-dark font-weight-bold font-size-3">Джедай Падаванов</span><small class="text-secondary">10:12</small></span><small class="chat-description text-truncate text-secondary d-block">Привет, скоро третий проект? Уже скоро надо будет выложить</small></span></a>
+                    </div>
+                    <div class="text-muted mb-3"><a class="chat d-flex align-items-center shadow text-decoration-none mt-3 px-3" href="chat.html"><img class="square-50 rounded-circle" src="./images/content/avatar_3.jpg" alt="Алексей Примадонин"><span class="flex-grow-1 p-4 overflow-hidden"><span class="d-flex justify-content-between"><span class="chat-name text-dark font-weight-bold font-size-3">Алексей Примадонин</span><small class="text-secondary">08:53</small></span><small class="chat-description text-truncate text-secondary d-block">Тесты упали &gt;_&lt;</small></span></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" aria-labelledby="profile-tab" id="profile">
+                  <h2 class="mb-3 font-weight-bold">Профиль</h2>
+                                    <form class="form-group mb-5">
+                                      <input class="form-control-plaintext border-bottom px-4 py-3 bg-white" type="search" placeholder="Поиск по сообщениям">
+                                    </form>
+                  <div class="profile pt-3 px-1">
+                    <div class="card text-center border-0 pt-3 pb-5 mb-4"><img class="card-avatar rounded-circle mx-auto width-90 height-90" src="./images/content/avatar_1.jpg" alt="">
+                      <div class="card-body">
+                        <h6 class="card-title font-weight-bold mb-3">Кодовёнок Хекслетович</h6>
+                        <p class="card-text text-secondary opacity-50">Милый и скромный помощник начинающих разработчиков. Люблю JavaScript</p>
+                      </div>
+                    </div>
+                    <div style="padding-bottom: 6px;"></div>
+                    <ul class="list-group list-group-flush pt-2 pl-3 pr-4">
+                      <li class="list-group-item d-flex justify-content-between align-items-center pt-3 pr-2"><span><small class="text-secondary d-block opacity-50">Страна</small><small class="d-block">Москва, Россия</small></span>
+                        <svg class="square-16 d-none d-lg-block mr-1 fill-secondary">
+                          <use xlink:href="images/sprite/sprite.svg#globe"></use>
+                        </svg>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center pt-3 pr-2"><span><small class="text-secondary d-block opacity-50">Телефон</small><small class="d-block">+7 (499) 123-45-67</small></span>
+                        <svg class="square-16 d-none d-lg-block mr-1 fill-secondary">
+                          <use xlink:href="images/sprite/sprite.svg#telephone"></use>
+                        </svg>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center pt-3 pr-2"><span><small class="text-secondary d-block opacity-50">Email</small><small class="d-block">nikita.m@hexlet.io</small></span>
+                        <svg class="square-16 d-none d-lg-block mr-1 fill-secondary">
+                          <use xlink:href="images/sprite/sprite.svg#envelope"></use>
+                        </svg>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center pt-3 pr-2"><span><small class="text-secondary d-block opacity-50">Twitter</small><small class="d-block">@n__mikhaylov</small></span>
+                        <svg class="square-16 d-none d-lg-block mr-1 fill-secondary">
+                          <use xlink:href="images/sprite/sprite.svg#people"></use>
+                        </svg>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6 col-xl-8 d-none d-lg-block border-lg-left h-100 overflow-auto hide-scrollbar">
+            <div class="d-flex justify-content-center align-items-center flex-column h-100" style="padding-bottom: 14px;"><img class="rounded-circle mb-3 square-200" src="./images/content/avatar_1.jpg" alt=""><span class="font-weight-bold mb-0">Привет, Кодовёнок</span><small class="text-secondary">Выбери чат, чтобы начать общаться</small></div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./js/scripts.js"></script>
+  </body>
+</html>
