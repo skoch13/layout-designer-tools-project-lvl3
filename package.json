@@ -2,6 +2,9 @@
   "name": "layout-designer-tools-project",
   "version": "1.0.1",
   "description": "[![Actions Status](https://github.com/skoch13/layout-designer-tools-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/skoch13/layout-designer-tools-project-lvl3/actions)",
+  "name": "layout-designer-tools-project",
+  "version": "1.0.0",
+  "description": "[![Actions Status](https://github.com/skoch13/layout-designer-tools-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/skoch13/layout-designer-tools-project-lvl3/actions)",
   "main": "index.js",
   "devDependencies": {
     "bootstrap": "^5.1.3",

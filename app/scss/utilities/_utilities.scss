@@ -1,244 +1,53 @@
-// My utilities
-
-// border radius utility
-
-.radius-left-top {
-  border-top-left-radius: 1rem;
-}
-
-.radius-left {
-  border-top-left-radius: 1rem;
-  border-bottom-left-radius: 1rem;
-}
-
-.radius-right-top {
-  border-top-right-radius: 1rem;
-}
-
-.radius-right-bottom {
-  border-bottom-right-radius: 1rem;
-}
-
-.radius-right {
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-
-.radius {
-  border-radius: 1rem;
-}
-
-@include media-breakpoint-down(md) {
-  .radius-right,
-  .radius-right-bottom,
-  .radius-right-top,
-  .radius-left,
-  .radius-left-top {
-    border-radius: 0;
-  }
-}
-
-// Make border responsive
-
-// $utilities: map-merge(
-//   $utilities,
-//   (
-//     "border":
-//       map-merge(
-//       map.get($utilities, "border"),
-//       (
-//         responsive: true,
-//       )
-//     ),
-//   )
-// );
-
-// // Базовая сетка
-
-// #left-section {
-//   width: 33%;
-//   min-width: 464px;
-// }
-
-// .hide-n-seek {
-//   display: none;
-// }
-
-// @include media-breakpoint-down(md) {
-//   #left-section {
-//     margin: 0;
-//     //     flex-direction: column-reverse !important;
-//     //     justify-content: space-between !important;
-//     //     min-width: 100%;
-//     //     border-radius: 0;
-
-//     .main-nav {
-//       border-radius: 0;
-
-//       &.sticky-top {
-//         top: auto !important;
-//         bottom: 0 !important;
-//       }
-
-//       span {
-//         display: none;
-//       }
-//     }
-//   }
-
-//   #right-section {
-//     display: none !important;
-//   }
-
-//     div {
-//       margin: 0 !important;
-//     }
-//   }
-
-//   .hide-n-seek {
-//     display: block;
-//   }
-
-//   .hide-on-mobile {
-//     display: none;
-//   }
-
-//   .income-message,
-//   .outgoing-message {
-//     max-width: 100%;
-//     width: fit-content !important;
-//   }
-// }
-
-// Контакты
-
-.cc-card {
-  img {
-    width: 50px;
-  }
-
-  &:hover {
-    color: #fbfbfb;
-    background-color: #4545a5;
-
-    // -webkit-transition: background-color 200ms linear;
-    // -ms-transition: background-color 200ms linear;
-    transition: background-color 200ms linear;
-  }
-}
-
-// Аватар
-
-#avatar img {
-  margin: 18px;
-}
-
-// mixin прячет скроллбар
-
-@mixin hide-scrollbar() {
-  & {
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-
-    overflow-x: hidden;
-    overflow-y: auto;
-  }
-
-  &::-webkit-scrollbar {
-    display: none;
-  }
-}
-
-.hide-scroll {
-  @include hide-scrollbar;
-}
-
-// Hexlet logo color
-
-// .chat-logo {
-//   filter: invert(96%) sepia(96%) saturate(15%) hue-rotate(351deg)
-//     brightness(104%) contrast(107%);
-// }
-
-// Clear styles
-
-.clear-style {
-  color: inherit;
-  text-decoration: inherit;
-}
-
-// Current chat
-
-.max-700 {
-  max-width: 700px;
-}
-
-// chat-message
-
-.chat-message {
-  max-width: 557px;
-}
-
-// Send button
-
-.send-button {
-  flex-shrink: 0;
-  width: 50px;
-  height: 50px;
-  margin: 18px 0;
-}
-
-@include media-breakpoint-down(md) {
-  .chat-message {
-    max-width: 100%;
-  }
-
-  .send-button {
-    flex-shrink: 0;
-    width: 42px;
-    height: 42px;
-    margin: 15px 0;
-  }
-}
-
-// Nav tabs
-
-.nav-tabs {
-  border-bottom: 0;
-
-  .nav-link {
-    margin-bottom: 0;
-
-    background: transparent;
-    border: 0;
-
-    @include border-top-radius($nav-tabs-border-radius);
-
-    &:hover,
-    &:focus {
-      border-color: transparent;
-
-      // Prevents active .nav-link tab overlapping focus outline of previous/next .nav-link
-      isolation: isolate;
-    }
-
-    &.disabled {
-      color: inherit;
-
-      background-color: transparent;
-      border-color: transparent;
-    }
-  }
-
-  .nav-link.active,
-  .nav-item.show .nav-link {
-    color: #fff;
-
-    background-color: transparent;
-    border-color: transparent;
-  }
-}
-
-.contact-card-name {
-  width: calc(100% - 50px);
-}
+$utilities: map-merge(
+  $utilities,
+  (
+    "border": map-merge(
+      map-get($utilities, "border"),
+      (responsive: true),
+    ),
+    "border-end": map-merge(
+        map-get($utilities, "border-end"),
+        (responsive: true),
+    ),
+    "border-start": map-merge(
+        map-get($utilities, "border-start"),
+        (responsive: true),
+    ),
+    "radius":(
+      property: border-radius,
+      responsive: true,
+      class: "radius",
+      values: (
+        null: 1rem,
+        50: 50px,
+        90: 90px,
+        100: 100px,
+        0: 0
+      ),
+    ),
+    "radius-left-top": (
+      property: border-top-left-radius,
+      class: "radius-left-top",
+      responsive: true,
+      values: (null: 1rem)
+    ),
+    "radius-left": (
+      property: border-top-left-radius border-bottom-left-radius,
+      class: "radius-left",
+      responsive: true,
+      values: (null: 1rem)
+    ),
+    "radius-right": (
+      property: border-bottom-right-radius border-top-right-radius,
+      class: "radius-right",
+      responsive: true,
+      values: (null: 1rem)
+    ),
+    "radius-right-bottom": (
+      property: border-bottom-right-radius,
+      class: "radius-right-bottom",
+      responsive: true,
+      values: (null: 1rem)
+    )
+  )
+);

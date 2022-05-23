@@ -1,0 +1,27 @@
+include ../components/message
+include ../components/searchbar
+
+-
+  const messages = [{
+    name: "Вениамин Редакторович",
+    message: "o_O",
+    timestamp: "11:45",
+    avatar: "/images/avatar_4.jpg"
+  }, {
+    name: "Джедай Падаванов",
+    message: "Привет, скоро третий проект? Уже скоро надо будет выложить",
+    timestamp: "10:12",
+    avatar: "/images/avatar_2.jpg"
+  }, {
+    name: "Алексей Примадонин",
+    message: "Тесты упали >_<",
+    timestamp: "08:53",
+    avatar: "/images/avatar_3.jpg"
+  }]
+
+div.pt-5.px-4
+  h2.fw-bold.mb-0 Чаты
+  div
+    +searchbar('Поиск по сообщениям')
+    each mes in messages
+      +message(mes.name, mes.message, mes.timestamp, mes.avatar)

@@ -1,0 +1,18 @@
+doctype html
+html(lang='ru')
+  include sections/head
+  body.vh-100.p-md-4
+    div.container-xxl.h-100.overflow-hidden.radius-left-sm.radius-right-bottom-sm
+      div.row.h-100
+        div.col-md-4.border-end-sm.px-0.menu.d-flex.flex-column.h-100
+          include sections/header
+          div.chat.overflow-auto.tab-content.mb-auto
+            div.tab-pane.active(id='contacts' role='tabpanel' aria-labelledby='contact-pill')
+              include sections/contacts
+            div.tab-pane(id='chats' role='tabpanel' aria-labelledby='chats-pill')
+              include sections/messages
+            div.tab-pane(id='profile' role='tabpanel' aria-labelledby='profile-pill')
+              include sections/profile
+        div.col.align-self-center.d-none.d-sm-block.h-100.px-0
+          include sections/right
+    script(src='https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js' integrity='sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p' crossorigin='anonymous')
