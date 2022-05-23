@@ -1,38 +1,41 @@
 {
-  "name": "layout-designer-project-lvl3",
-  "version": "1.0.0",
-  "description": "[![Actions Status](https://github.com/agapovk/layout-designer-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/agapovk/layout-designer-project-lvl3/actions)",
+  "name": "layout-designer-tools-project",
+  "version": "1.0.1",
+  "description": "[![Actions Status](https://github.com/skoch13/layout-designer-tools-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/skoch13/layout-designer-tools-project-lvl3/actions)",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/agapovk/layout-designer-project-lvl3.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/agapovk/layout-designer-project-lvl3/issues"
-  },
-  "homepage": "https://github.com/agapovk/layout-designer-project-lvl3#readme",
   "devDependencies": {
-    "browser-sync": "^2.27.7",
+    "bootstrap": "^5.1.3",
+    "browser-sass": "^1.22.8",
+    "browser-sync": "^2.27.9",
     "gulp": "^4.0.2",
     "gulp-concat": "^2.6.1",
     "gulp-pug": "^5.0.0",
-    "gulp-sass": "^5.0.0",
-    "gulp-svg-sprite": "^1.3.7",
-    "htmlhint": "^1.0.0",
-    "pug": "^3.0.2",
-    "sass": "^1.44.0",
-    "stylelint": "^14.1.0",
-    "stylelint-config-rational-order": "^0.0.4",
-    "stylelint-config-standard": "^24.0.0",
-    "stylelint-order": "^5.0.0"
+    "gulp-sass": "^5.1.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "sass": "^1.51.0",
+    "ss": "^0.0.1",
+    "stylelint": "^14.8.2",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^25.0.0",
+    "stylelint-config-standard-scss": "^3.0.0",
+    "stylelint-order": "^5.0.0",
+    "stylelint-scss": "^4.2.0",
+    "surge": "^0.23.1"
   },
-  "dependencies": {
-    "bootstrap": "^5.1.3",
-    "stylelint-scss": "^4.0.0"
-  }
+  "scripts": {
+    "dev": "gulp dev",
+    "build": "gulp build",
+    "lintcss": "npx stylelint --fix ./app/scss/**/*.scss",
+    "deploy": "surge --domain noisy-bedroom.surge.sh build/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/skoch13/layout-designer-tools-project-lvl3.git"
+  },
+  "author": "sk",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/skoch13/layout-designer-tools-project-lvl3/issues"
+  },
+  "homepage": "https://github.com/skoch13/layout-designer-tools-project-lvl3#readme"
 }
