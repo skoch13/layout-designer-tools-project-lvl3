@@ -94,6 +94,7 @@ p:empty {
     order: 2;
   }
   .chat-message {
-    width: 100%
+    width: 100%;
+    align-self: center !important;
   }
 }

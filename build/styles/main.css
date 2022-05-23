@@ -11606,5 +11606,6 @@ p:empty {
 
   .chat-message {
     width: 100%;
+    align-self: center !important;
   }
 }
