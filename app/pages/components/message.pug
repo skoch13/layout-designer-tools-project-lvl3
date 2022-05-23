@@ -6,9 +6,9 @@ mixin message(name, message, timestamp, avatar)
     div.my-3.d-flex.shadow-sm.justify-content-start.card-component.text-truncate
       div.align-self-center.ms-2.me-3
         +avatar(avatar)
-      div.my-4.align-self-center.message.me-3.d-flex.flex-column.flex-grow-1
+      div.my-4.align-self-center.message.me-4.d-flex.flex-column.flex-grow-1
         div.d-inline-flex
-          p.h6.fw-bold.mb-0.me-2= name
+          p.h6.fw-bold.mb-0.me-1= name
           p.status.small.fw-light.opacity-50.mb-0.ms-auto= timestamp
         div.status.pb-0.fw-light.text-truncate.m-0
           small= message

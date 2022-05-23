@@ -11,11 +11,11 @@ html(lang='ru')
           div.chat.overflow-auto.tab-content.mb-auto
             div.tab-pane(id='contacts' role='tabpanel' aria-labelledby='contact-pill')
               include sections/contacts
-            div.tab-pane.active(id='chats' role='tabpanel' aria-labelledby='chats-pill')
+            div.tab-pane.active.d-none.d-sm-block(id='chats' role='tabpanel' aria-labelledby='chats-pill')
               include sections/messages
             div.tab-pane(id='profile' role='tabpanel' aria-labelledby='profile-pill')
               include sections/profile
-            div.tab-pane(id='current-chat-pill' role='tabpanel' aria-labelledby='current-pill' class='h-100')
+            div.tab-pane.active.d-block.d-sm-none(id='current-chat-pill' role='tabpanel' aria-labelledby='current-pill' class='h-100')
               +right-chat(class='d-flex flex-column d-md-none')
         div.col-md-8.d-none.d-sm-flex.flex-sm-column.px-0.align-items-start.h-100
           +right-chat(class='d-none d-md-flex flex-column')
