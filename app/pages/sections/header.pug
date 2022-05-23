@@ -1,9 +1,9 @@
 header.order-last.order-md-first.radius-left-top-md.text-light.bg-primary
   nav.d-flex.px-3.py-3.justify-content-between.align-items-center
-    a.navbar-brand.flex-grow-1.align-self-start.ms-1(href='#')
+    a.navbar-brand.flex-grow-1.align-self-start.ms-2(href='#')
       svg.logo
         use(href='images/symbol/sprite.svg#logo')
-    ul.nav.nav-pills.border-0.bg-primary.flex-nowrap.d-flex.me-1.flex-grow-1.justify-content-end.ms-4.mx-sm-2(role='tablist')
+    ul.nav.nav-pills.border-0.bg-primary.flex-nowrap.d-flex.me-1.flex-grow-1.justify-content-between.ms-4.mx-sm-2(role='tablist')
       if current == 'chat'
         li.nav-item.d-md-none.d-block.pe-2(role='presentation')
           div(data-bs-toggle='pill' id='current-pill' data-bs-target='#current-chat-pill' role='tab' aria-controls='current-chat-pill' aria-selected='true')
