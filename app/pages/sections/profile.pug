@@ -1,0 +1,8 @@
+include ../components/searchbar
+div.pt-5.px-4
+  h2.fw-bold Профиль
+  div
+    +searchbar('Поиск по сообщениям')
+    div.mt-4
+      include ../components/profile-card
+      include ../components/profile-info

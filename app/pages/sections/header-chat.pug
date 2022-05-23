@@ -1,0 +1,16 @@
+-
+  const user = {
+    name: "Вениамин Редакторович",
+    status: "Онлайн",
+    avatar: "/images/avatar_4.jpg"
+  }
+
+include ../components/avatar
+
+div.mb-3.d-flex.card-component.position-sticky.text-decoration-none.border-bottom.pb-1
+  div.mx-3.my-3
+    +avatar(user.avatar)
+  div.mt-3.lh-1
+    p.h6.fw-bold.mb-0= user.name
+    div.status.fw-normal.mt-1
+      small= user.status
