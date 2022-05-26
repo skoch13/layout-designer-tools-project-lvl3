@@ -11543,6 +11543,11 @@ textarea.form-control-lg {
   height: 90px;
 }
 
+.btn {
+  width: 50px;
+  height: 50px;
+}
+
 .card-component .contact:hover {
   cursor: pointer;
   background: #4545a5;
@@ -11596,7 +11601,7 @@ p:empty {
 }
 
 .chat-message {
-  width: 75%;
+  width: 85%;
 }
 
 @media (max-width: 575.98px) {
@@ -11607,5 +11612,14 @@ p:empty {
   .chat-message {
     width: 100%;
     align-self: center !important;
+  }
+
+  .btn {
+    width: 42px;
+    height: 42px;
+  }
+
+  .btn svg {
+    min-width: 24px;
   }
 }

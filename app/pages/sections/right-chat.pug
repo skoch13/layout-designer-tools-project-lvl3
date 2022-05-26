@@ -1,11 +1,11 @@
 mixin right-chat
   div.h-100#current-chat&attributes(attributes)
     include header-chat
-    main.px-5.pt-5.d-md-flex.flex-md-column.overflow-auto.h-100.chat
+    main.p-5.px-sm-4.pt-sm-4.d-md-flex.flex-md-column.overflow-auto.h-100.chat
       include current-chat
-    form.d-flex.align-items-center.mx-md-5.ps-2.py-2.py-md-3.pe-md-2.border-md-1.border-top.mt-auto
+    form.d-flex.align-items-center.mx-md-5.ps-2.py-2.py-md-3.pe-md-3.border-md-1.border-top.mt-auto
       label.visually-hidden(for='message') Сообщение
       input#message.form-control-plaintext.fw-normal.p-3.ps-3(type='text', placeholder='Напишите сообщение...')
-      button.btn.d-flex.p-3.border-primary.radius-100.bg-primary.text-light.me-4(type='submit')
-        svg.cursor.d-block.text-center.m-0
+      button.btn.d-flex.border-primary.radius-100.bg-primary.text-light.me-4.p-2.align-items-center.justify-content-center(type='submit')
+        svg.d-block.align-items-center.m-0.p-0.cursor
           use(href='images/symbol/sprite.svg#cursor')
