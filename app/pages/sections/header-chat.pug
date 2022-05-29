@@ -8,9 +8,9 @@
 include ../components/avatar
 
 div.d-flex.card-component.position-sticky.text-decoration-none.border-bottom.align-self-start.w-100
-  div.mx-2.my-3
+  div.ms-2.my-3.me-3
     +avatar(user.avatar)(class='mb-1')
-  div.mt-4
+  div.align-self-center
     p.h6.fw-bold.mb-0= user.name
-    div.status.fw-normal.mt-1
+    div.status.fw-normal
       small= user.status

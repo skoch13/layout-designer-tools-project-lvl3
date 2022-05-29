@@ -23,5 +23,6 @@ div.pt-5.px-4
   h2.fw-bold.mb-0 Чаты
   div
     +searchbar('Поиск по сообщениям')
-    each mes in messages
-      +message(mes.name, mes.message, mes.timestamp, mes.avatar)
+    div.mt-5
+      each mes in messages
+        +message(mes.name, mes.message, mes.timestamp, mes.avatar)
