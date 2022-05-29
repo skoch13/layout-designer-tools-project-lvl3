@@ -7,8 +7,8 @@ mixin message(name, message, timestamp, avatar)
       div.align-self-center
         +avatar(avatar)
       div.ms-3.align-self-center.message.d-flex.flex-column.flex-grow-1
-        div.d-inline-flex
-          p.fw-bold.mb-0.me-1= name
-          p.status.small.fw-light.opacity-50.mb-0.ms-auto= timestamp
+        div.d-inline-flex.justify-content-between
+          p.fw-bold.mb-0= name
+          p.status.small.fw-light.opacity-50.mb-0.align-self-end= timestamp
         div.status.pb-0.fw-light.text-truncate.m-0
           small= message
