@@ -11601,7 +11601,7 @@ p:empty {
 }
 
 .chat-message {
-  width: 75%;
+  width: 70%;
 }
 
 @media (max-width: 575.98px) {
