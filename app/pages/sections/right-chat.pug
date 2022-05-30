@@ -3,7 +3,7 @@ mixin right-chat
     include header-chat
     main.p-5.d-md-flex.flex-md-column.overflow-auto.h-100.chat
       include current-chat
-    form.d-flex.align-items-center.mx-sm-5.px-3.py-4.border-md-1.border-top
+    form.d-flex.align-items-center.mx-md-5.ps-2.py-2.py-md-3.pe-3.pe-md-2.border-md-1.border-top
       label.visually-hidden(for='message') Сообщение
       input#message.form-control-plaintext.fw-normal.p-3(type='text', placeholder='Напишите сообщение...')
       button.btn.d-flex.border-primary.radius-100.bg-primary.text-light.mx-2.p-2.align-items-center.justify-content-center(type='submit')

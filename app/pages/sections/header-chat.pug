@@ -7,10 +7,10 @@
 
 include ../components/avatar
 
-div.d-flex.card-component.position-sticky.text-decoration-none.border-bottom.align-self-start.w-100.ps-3.py-4
+div.d-flex.card-component.position-sticky.text-decoration-none.border-bottom.w-100.ps-3.pt-4.pb-3
   div
     +avatar(user.avatar)
-  div.align-self-center.ms-3
-    p.fw-bold.mb-0= user.name
+  div.align-self-center.ms-4
+    div.fw-bold.mb-0= user.name
     div.status.fw-normal
       small= user.status
