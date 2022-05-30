@@ -6,12 +6,12 @@ $utilities: map-merge(
       (responsive: true),
     ),
     "border-end": map-merge(
-        map-get($utilities, "border-end"),
-        (responsive: true),
+      map-get($utilities, "border-end"),
+      (responsive: true),
     ),
     "border-start": map-merge(
-        map-get($utilities, "border-start"),
-        (responsive: true),
+      map-get($utilities, "border-start"),
+      (responsive: true),
     ),
     "radius":(
       property: border-radius,
