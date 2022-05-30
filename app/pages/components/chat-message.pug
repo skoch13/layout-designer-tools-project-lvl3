@@ -2,6 +2,6 @@ mixin chat-message(name, message, timestamp)
   div.d-flex.flex-column.radius.ms-sm-3.shadow-sm.align-items-start.justify-content-center.align-content-center&attributes(attributes)
     div.p-4
       p.fw-bold.mb-1= name
-      p.msg.mb-0.pb-1.border-bottom= message
-      div.fw-light
+      p.msg.mb-0.pb-2.border-bottom= message
+      div.fw-light.pb-1
         small= timestamp
